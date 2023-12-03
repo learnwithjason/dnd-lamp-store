@@ -34,6 +34,7 @@ export function Lamp({ lamp }: { lamp: Doc<'lamps'> }) {
         <button
           onClick={() => buylamp({ _id: lamp._id })}
           disabled={lamp.inventory < 1}
+          aria-live="polite"
         >
           {lamp.inventory < 1 ? 'Sold Out' : 'Buy'}
         </button>

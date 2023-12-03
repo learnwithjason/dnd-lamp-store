@@ -33,7 +33,9 @@ function App() {
             to give you and your party a pick-me-up to suit any quest.
           </p>
 
-          <Toast />
+          <div aria-atomic="true" aria-live="polite">
+            <Toast />
+          </div>
         </section>
 
         <ul className="lamp-list">
