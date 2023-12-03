@@ -1,0 +1,26 @@
+[
+  {
+    "description": "This mysterious stone has a hypnotic effect. Legend holds it can be used as a random number generator, though the knowledge of how has been lost to modern history.",
+    "image": "https://res.cloudinary.com/jlengstorf/image/upload/q_auto,f_auto,w_400/4d1a/convex-dnd/lava-lamp.png",
+    "inventory": 6,
+    "name": "Abyssinia Deepvoid’s Stone of Mesmerization",
+    "price": 2,
+    "slug": "stone-of-mesmerization"
+  },
+  {
+    "description": "Fight off the cold with the fire spell captured in this stone. Store away from flammable materials.",
+    "image": "https://res.cloudinary.com/jlengstorf/image/upload/q_auto,f_auto,w_400/4d1a/convex-dnd/heat-lamp.png",
+    "inventory": 4,
+    "name": "Horace Hellforge’s Neverwinter Stone",
+    "price": 3,
+    "slug": "neverwinter-stone"
+  },
+  {
+    "description": "The warm light from this stone is restorative (literally). It’s been imbued with a greater restoration spell to cure seasonal depression.",
+    "image": "https://res.cloudinary.com/jlengstorf/image/upload/q_auto,f_auto,w_400/4d1a/convex-dnd/sad-lamp.png",
+    "inventory": 10,
+    "name": "Glynn Goldheart's Stone of Summer Warmth",
+    "price": 2,
+    "slug": "stone-of-summer-warmth"
+  }
+]

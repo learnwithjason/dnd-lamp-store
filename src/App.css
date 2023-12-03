@@ -1,0 +1,119 @@
+#root {
+  margin: 0 auto;
+  width: calc(600px + 5rem);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 1rem;
+  padding-block: 1rem;
+
+  & a {
+    color: white;
+    font-weight: 900;
+  }
+}
+
+section {
+  margin-block-end: 1rem;
+  padding-block: 2rem 3rem;
+  position: relative;
+
+  & h1 {
+    color: white;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  & p {
+    margin: 0.5rem 0 0;
+  }
+}
+
+.toast {
+  background: rgb(255 255 200 / 0.85);
+  border-radius: 0.25rem;
+  color: #060b17;
+  inset: 0;
+  inset-block-start: auto;
+  padding-block: 0.25rem;
+  position: absolute;
+  text-align: center;
+}
+
+.lamp-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, calc(200px + 1rem));
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  & li {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    position: relative;
+
+    & img {
+      aspect-ratio: 1;
+      border: 1px solid rgb(255 255 255 / 0.25);
+      border-radius: 0.5rem;
+      height: auto;
+      width: 200px;
+      object-fit: cover;
+    }
+
+    & h2 {
+      color: #dee;
+      font-size: 1rem;
+      line-height: 1.3;
+      margin: 1rem 0 0;
+    }
+
+    & p {
+      font-size: 0.875rem;
+      margin: 0.5rem 0 0;
+      text-wrap: pretty;
+    }
+
+    & .price {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-block-start: auto;
+      padding-block-start: 1rem;
+
+      &::before {
+        content: 'Price: ';
+      }
+    }
+
+    & .low-stock-alert {
+      background: rgb(255 255 200 / 0.85);
+      border-radius: 0.25rem;
+      color: #060b17;
+      font-size: 0.75rem;
+      inset: 1rem;
+      inset-block-end: auto;
+      margin: 0;
+      padding: 0.25rem;
+      position: absolute;
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  font-size: 0.75rem;
+  gap: 2rem;
+  justify-content: space-between;
+  padding-block: 3rem;
+
+  & a {
+    color: inherit;
+  }
+}
