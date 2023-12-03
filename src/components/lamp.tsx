@@ -30,8 +30,13 @@ export function Lamp({ lamp }: { lamp: Doc<'lamps'> }) {
       <h2>{lamp.name}</h2>
       <p>{lamp.description}</p>
       <p className="price">{lamp.price} gold</p>
-      {lamp.inventory > 0 ? (
-        <button onClick={() => buylamp({ _id: lamp._id })}>Buy</button>
+      {lamp.inventory > 0 || !isAuthenticated ? (
+        <button
+          onClick={() => buylamp({ _id: lamp._id })}
+          disabled={lamp.inventory < 1}
+        >
+          {lamp.inventory < 1 ? 'Sold Out' : 'Buy'}
+        </button>
       ) : null}
 
       {lamp.inventory <= 5 && lamp.inventory > 0 ? (

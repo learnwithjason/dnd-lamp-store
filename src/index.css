@@ -53,4 +53,10 @@ button {
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
+
+  &:disabled {
+    cursor: default;
+    filter: saturate(0);
+    opacity: 0.75;
+  }
 }
