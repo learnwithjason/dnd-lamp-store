@@ -28,7 +28,7 @@ function App() {
           <h1>Light for every adventurer</h1>
 
           <p>
-            These stones are all imbued with continual light, and you old pal
+            These stones are all imbued with continual light, and your old pal
             Bingus always goes the extra mile: each has a lil something special
             to give you and your party a pick-me-up to suit any quest.
           </p>
